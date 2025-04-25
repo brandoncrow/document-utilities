@@ -16,8 +16,6 @@ Moves already-renamed files from a staging directory to a target location based 
 ### 4. `get_metadata.py`
 Recursively collects file metadata (path, size, hash, type) and outputs it as an Excel sheet. Useful for audit or tracking.
 
----
-
 ## Setup
 
 ```bash
@@ -25,8 +23,6 @@ pip install -r requirements.txt
 ```
 
 Each script is designed to run independently and is executed via the command line (except `copy_docs_to_subfolder.py`, which uses hardcoded paths).
-
----
 
 ## Usage Examples
 
@@ -36,7 +32,7 @@ python move_renamed.py "updated.xlsx" "D:/staging" "D:/final" "NewFileName"
 python get_metadata.py "C:/Documents"
 ```
 
-## 🧠 Notes
+## Notes
 
 - All scripts assume files are small enough to handle locally.
 - Logs are written for missing or failed copies where applicable.
